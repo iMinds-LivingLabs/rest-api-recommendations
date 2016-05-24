@@ -20,6 +20,20 @@ Never populate relationships inline, but provide them in an `included` array:
 }
 ```
 
+This is a cleaner approach than having them inline, since it:
+
+* improves readability
+* adds flexibility, when
+    * parsing
+    * redeclaring relationships
+    * caching
+    * populating (the response can be constructed in multiple steps throughout the application)
+* improves separation of concerns, when
+    * parsing (every type its own parser; then boundaries are more clear)
+    * populating
+* improves ease-of-use for complex, hierarchical relationship structures
+* avoids duplication (e.g. when two separate objects refer to the same object)    
+
 Self-referencing collections obviously need not include the resource objects a second time in `included`:
 
 ```json

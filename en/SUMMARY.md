@@ -38,4 +38,3 @@
   *  [Provide machine-readable JSON schema](artifacts/provide-machine-readable-json-schema.md)
   *  [Provide human-readable docs](artifacts/provide-human-readable-docs.md)
   *  [Provide executable examples](artifacts/provide-executable-examples.md)
-  *  [Describe stability](artifacts/describe-stability.md)

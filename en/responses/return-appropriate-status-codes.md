@@ -11,7 +11,7 @@ responses should be coded according to this guide:
   will be processed asynchronously
 * `204 No Content`: Request accepted for a `DELETE` call that synchronously removed an existing resource.  
 * `206 Partial Content`: Request succeeded on `GET`, but only a partial response
-  returned: see [sorting, filtering and pagination](sorting-filtering-and-pagination.md)
+  returned: see [filtering](../requests/filtering.md)
 
 Pay attention to the use of authentication and authorization error codes:
 
