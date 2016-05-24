@@ -1,0 +1,31 @@
+{
+  "name": "rest-api-recommendations",
+  "version": "0.0.0",
+  "description": "REST API recommendations",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMinds-LivingLabs/rest-api-recommendations.git"
+  },
+  "scripts": {
+    "prebuild": "gitbook install en",
+    "build": "gitbook build en",
+    "serve": "gitbook serve en",
+    "publish": "npm run build; grunt gh-pages"
+  },
+  "keywords": [
+    "rest",
+    "api"
+  ],
+  "author": "Camille Reynders",
+  "license": "Creative Commons Attribution 3.0 Unported License",
+  "bugs": {
+    "url": "https://github.com/iMinds-LivingLabs/rest-api-recommendations/issues"
+  },
+  "homepage": "https://github.com/iMinds-LivingLabs/rest-api-recommendations#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-gh-pages": "^1.1.0",
+    "jit-grunt": "^0.10.0"
+  }
+}
