@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="3.7" data-basepath=".." data-revision="Tue May 24 2016 11:21:37 GMT+0200 (CEST)">
+    <div class="book" data-level="3.7" data-basepath=".." data-revision="Tue May 24 2016 14:00:48 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -657,21 +657,6 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="artifacts/describe-stability.html">
-            
-                
-                    <a href="../artifacts/describe-stability.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.4.</b>
-                        
-                        Describe stability
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -798,6 +783,24 @@
   ]
 }
 </code></pre>
+<p>This is a cleaner approach than having them inline, since it:</p>
+<ul>
+<li>improves readability</li>
+<li>adds flexibility, when<ul>
+<li>parsing</li>
+<li>redeclaring relationships</li>
+<li>caching</li>
+<li>populating (the response can be constructed in multiple steps throughout the application)</li>
+</ul>
+</li>
+<li>improves separation of concerns, when<ul>
+<li>parsing (every type its own parser; then boundaries are more clear)</li>
+<li>populating</li>
+</ul>
+</li>
+<li>improves ease-of-use for complex, hierarchical relationship structures</li>
+<li>avoids duplication (e.g. when two separate objects refer to the same object)    </li>
+</ul>
 <p>Self-referencing collections obviously need not include the resource objects a second time in <code>included</code>:</p>
 <pre><code class="lang-json">{
   <span class="hljs-string">&quot;data&quot;</span>: [{

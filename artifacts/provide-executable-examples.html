@@ -20,8 +20,6 @@
         
     
     
-    <link rel="next" href="../artifacts/describe-stability.html" />
-    
     
     <link rel="prev" href="../artifacts/provide-human-readable-docs.html" />
     
@@ -36,7 +34,7 @@
     
 
         
-    <div class="book" data-level="4.3" data-basepath=".." data-revision="Tue May 24 2016 11:21:37 GMT+0200 (CEST)">
+    <div class="book" data-level="4.3" data-basepath=".." data-revision="Tue May 24 2016 14:00:48 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -657,21 +655,6 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="artifacts/describe-stability.html">
-            
-                
-                    <a href="../artifacts/describe-stability.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.4.</b>
-                        
-                        Describe stability
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -784,13 +767,14 @@
 <p>Provide executable examples that users can type directly into their
 terminals to see working API calls. To the greatest extent possible,
 these examples should be usable verbatim, to minimize the amount of
-work a user needs to do to try the API, e.g.:</p>
-<pre><code class="lang-bash">$ <span class="hljs-built_in">export</span> TOKEN=... <span class="hljs-comment"># acquire from dashboard</span>
-$ curl -is https://<span class="hljs-variable">$TOKEN</span>@service.com/users
+work a user needs to do to try the API.</p>
+<p>If you use <a href="">postman</a> to test/mock API requests 
+you can let it generate various kinds of examples, e.g.</p>
+<pre><code>curl -X POST -H &quot;Content-Type: application/json&quot; -d &apos;{
+&quot;email&quot;:&quot;john.doe@example.com&quot;,
+&quot;password&quot;:&quot;test&quot;
+}&apos; &quot;http://service.com/api/session&quot;
 </code></pre>
-<p>If you use <a href="https://github.com/interagent/prmd" target="_blank">prmd</a> to generate Markdown
-docs, you will get examples for each endpoint for free.</p>
-
                     
                     </section>
                 
@@ -800,10 +784,8 @@ docs, you will get examples for each endpoint for free.</p>
         </div>
 
         
-        <a href="../artifacts/provide-human-readable-docs.html" class="navigation navigation-prev " aria-label="Previous page: Provide human-readable docs"><i class="fa fa-angle-left"></i></a>
+        <a href="../artifacts/provide-human-readable-docs.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Provide human-readable docs"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../artifacts/describe-stability.html" class="navigation navigation-next " aria-label="Next page: Describe stability"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -36,7 +36,7 @@
     
 
         
-    <div class="book" data-level="2.5.3" data-basepath=".." data-revision="Tue May 24 2016 11:21:37 GMT+0200 (CEST)">
+    <div class="book" data-level="2.5.3" data-basepath=".." data-revision="Tue May 24 2016 14:00:48 GMT+0200 (CEST)">
     
 
 <div class="book-summary">
@@ -657,21 +657,6 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="artifacts/describe-stability.html">
-            
-                
-                    <a href="../artifacts/describe-stability.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.4.</b>
-                        
-                        Describe stability
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -781,11 +766,14 @@
                     <section class="normal" id="section-">
                     
                         <h4 id="pagination">Pagination</h4>
-<p>provide an <code>offset</code> (or <code>o</code>) parameter for specifying a position together with a <code>limit</code> (or <code>l</code>) query parameter, accepting an unary negative operator for counting back.</p>
+<p>provide an <code>offset</code> (or <code>o</code>) parameter for specifying a position together with a <code>limit</code> (or <code>l</code>) query parameter, 
+accepting an unary negative operator for counting back.</p>
 <ul>
-<li><code>GET /posts?cursor=8962596c-3f6d-482b-81a0-e62ca45aa4de&amp;limit=30</code> - returns 30 posts starting at the one with the specified uuid.</li>
+<li><code>GET /posts?cursor=8962596c-3f6d-482b-81a0-e62ca45aa4de&amp;limit=30</code> - returns 30 posts 
+starting at the one with the specified uuid.</li>
 <li><p><code>GET /posts?o=39&amp;l=-25</code> - returns 25 posts from position 14 (=39-25)</p>
-<p>When <code>limit</code> exceeds the number of available resources in the (sub-)collection, all available resources matching the range will be returned</p>
+<p>When <code>limit</code> exceeds the number of available resources in the (sub-)collection, 
+all available resources matching the range will be returned</p>
 </li>
 <li><p><code>GET /posts?offset=5&amp;limit=-20</code> - returns 5 posts</p>
 </li>
