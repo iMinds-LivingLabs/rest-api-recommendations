@@ -1,4 +1,4 @@
-#### Support ETags for Caching
+### Support ETags for Caching
 
 Include an `ETag` header in all responses, identifying the specific
 version of the returned resource. This allows users to cache resources

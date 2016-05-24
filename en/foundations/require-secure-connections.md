@@ -1,4 +1,4 @@
-#### Require Secure Connections
+### Require Secure Connections
 
 Require secure connections with TLS to access the API, without exception.
 It’s not worth trying to figure out or explain when it is OK to use TLS

@@ -11,4 +11,4 @@ $ curl https://service.com/apps/97addcf0-c182
 $ curl https://service.com/apps/www-prod
 ```
 
-Do not accept only names to the exclusion of IDs.
+**Do not accept only names to the exclusion of IDs.**

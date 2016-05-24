@@ -1,4 +1,4 @@
-#### Provide executable examples
+### Provide executable examples
 
 Provide executable examples that users can type directly into their
 terminals to see working API calls. To the greatest extent possible,

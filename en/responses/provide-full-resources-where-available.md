@@ -1,9 +1,8 @@
-#### Provide full resources where available
+### Provide full resources where available
 
 Provide the full resource representation (i.e. the object with all
 attributes) whenever possible in the response. Always provide the full
-resource on 200 and 201 responses, including `PUT`/`PATCH` and `DELETE`
-requests, e.g.:
+resource on 200 and 201 responses, **including `PATCH` requests**, e.g.:
 
 ```bash
 $ curl -X DELETE \

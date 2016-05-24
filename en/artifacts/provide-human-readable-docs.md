@@ -1,4 +1,4 @@
-#### Provide human-readable docs
+### Provide human-readable docs
 
 Provide human-readable documentation that client developers can use to
 understand your API.

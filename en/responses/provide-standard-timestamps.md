@@ -1,4 +1,4 @@
-#### Provide standard timestamps
+### Provide standard timestamps
 
 Provide `created_at` and `updated_at` timestamps for resources by default,
 e.g:

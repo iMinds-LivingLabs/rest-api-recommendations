@@ -1,4 +1,4 @@
-#### Describe stability
+### Describe stability
 
 Describe the stability of your API or its various endpoints according to
 its maturity and stability, e.g. with prototype/development/production

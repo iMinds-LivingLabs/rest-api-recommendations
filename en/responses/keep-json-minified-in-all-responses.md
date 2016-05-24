@@ -1,4 +1,4 @@
-#### Keep JSON minified in all responses
+### Keep JSON minified in all responses
 
 Extra whitespace adds needless response size to requests, and many
 clients for human consumption will automatically "prettify" JSON
@@ -21,7 +21,5 @@ Instead of e.g.:
 }
 ```
 
-You may consider optionally providing a way for clients to retrieve
-more verbose response, either via a query parameter (e.g. `?pretty=true`)
-or via an `Accept` header param (e.g.
-`Accept: application/vnd.heroku+json; version=3; indent=4;`).
+You should consider providing a way for clients to retrieve
+a formatted response, through a query parameter (e.g. `?pretty=true`)

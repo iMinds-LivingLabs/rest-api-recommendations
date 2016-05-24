@@ -1,18 +1,17 @@
-#### Return appropriate status codes
+### Return appropriate status codes
 
 Return appropriate HTTP status codes with each response. Successful
 responses should be coded according to this guide:
 
-* `200`: Request succeeded for a `GET` call, for a `DELETE` or
-  `PATCH` call that completed synchronously, or for a `PUT` call that
+* `200 OK`: Request succeeded for a `GET` `PATCH` or `PUT` call that
   synchronously updated an existing resource
-* `201`: Request succeeded for a `POST` call that completed
-  synchronously, or for a `PUT` call that synchronously created a new
-  resource
-* `202`: Request accepted for a `POST`, `PUT`, `DELETE`, or `PATCH` call that
+* `201 Created`: Request succeeded for a `POST` call that completed
+  synchronously
+* `202 Accepted`: Request accepted for a `POST`, `PUT`, `DELETE`, or `PATCH` call that
   will be processed asynchronously
-* `206`: Request succeeded on `GET`, but only a partial response
-  returned: see [above on ranges](../foundations/divide-large-responses-across-requests-with-ranges.md)
+* `204 No Content`: Request accepted for a `DELETE` call that synchronously removed an existing resource.  
+* `206 Partial Content`: Request succeeded on `GET`, but only a partial response
+  returned: see [sorting, filtering and pagination](sorting-filtering-and-pagination.md)
 
 Pay attention to the use of authentication and authorization error codes:
 
@@ -21,6 +20,8 @@ Pay attention to the use of authentication and authorization error codes:
 
 Return suitable codes to provide additional information when there are errors:
 
+* `400 Bad Request`: Your request could not be understood, due to e.g. malformed json
+* `404 Not Found`: Resource wasn't found
 * `422 Unprocessable Entity`: Your request was understood, but contained invalid parameters
 * `429 Too Many Requests`: You have been rate-limited, retry later
 * `500 Internal Server Error`: Something went wrong on the server, check status site and/or report the issue

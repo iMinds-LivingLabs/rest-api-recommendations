@@ -1,6 +1,6 @@
-#### Use UTC times formatted in ISO8601
+### Use UTC times formatted in ISO8601
 
-Accept and return times in UTC only. Render times in ISO8601 format,
+Accept and return times **in UTC only**. Render times in ISO8601 format,
 e.g.:
 
 ```

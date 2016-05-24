@@ -1,4 +1,4 @@
-#### Separate Concerns
+### Separate Concerns
 
 Keep things simple while designing by separating the concerns between the
 different parts of the request and response cycle. Keeping simple rules here

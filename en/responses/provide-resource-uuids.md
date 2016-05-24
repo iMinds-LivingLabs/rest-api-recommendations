@@ -1,4 +1,4 @@
-#### Provide resource (UU)IDs
+### Provide resource (UU)IDs
 
 Give each resource an `id` attribute by default. Use UUIDs unless you
 have a very good reason not to. Don’t use IDs that won’t be globally
@@ -9,4 +9,10 @@ Render UUIDs in downcased `8-4-4-4-12` format, e.g.:
 
 ```
 "id": "01234567-89ab-cdef-0123-456789abcdef"
+```
+
+If you do need auto-incrementing IDs (for easier referral in documents for instance) make it a separate field.
+
+```
+"rid": 42
 ```

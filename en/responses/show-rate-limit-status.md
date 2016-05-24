@@ -1,4 +1,4 @@
-#### Show rate limit status
+### Show rate limit status
 
 Rate limit requests from clients to protect the health of the service
 and maintain high service quality for other clients. You can use a
