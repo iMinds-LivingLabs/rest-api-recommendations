@@ -49,3 +49,37 @@ Self-referencing collections obviously need not include the resource objects a s
   }]
 }
 ```
+
+When included resource objects have populated relationships of themselves,
+ these should be included in the top-level `included` array too
+
+```json
+{
+  "data": {
+    "title": "My first post",
+    "body": "Yeah, this is my first post!",
+    "author": "e52f94aa-f6b4-41eb-8d95-0192783d778c",
+    "type": "posts"
+  },
+  "included": [
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "group": "94566039-106e-49b0-89f1-3eced15b4c16",
+      "type": "users"
+    },
+    {
+      "id": "94566039-106e-49b0-89f1-3eced15b4c16",
+      "title": "Contributors",
+      "type": "groups"
+    }
+  ]
+}
+```
+
+`data` is strictly preserved for the requested resource, 
+i.e. it's `type` should _always_ match the collection name the request was issued upon.
+E.g. above would only be returned by requests to `/posts`, `/user/:id/posts` etc.
+
+`included` is preserved for any resource objects (i.e. part of the domain) that weren't requested directly, 
+but are included for optimisation reasons: fewer requests, speed, duplication prevention, etc.
