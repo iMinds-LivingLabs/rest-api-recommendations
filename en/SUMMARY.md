@@ -11,6 +11,7 @@
   * [Accept serialized JSON in request bodies](requests/accept-serialized-json-in-request-bodies.md)
   * [Resource names](requests/resource-names.md)
   * [Actions](requests/actions.md)
+  * [Hierarchical data](requests/hierarchical-data.md)
   * [Use consistent path formats](requests/use-consistent-path-formats.md)
     * [Paths and attributes case](requests/paths-and-attributes-case.md)
     * [Support non-id dereferencing for convenience](requests/support-non-id-dereferencing-for-convenience.md)
@@ -24,10 +25,10 @@
   * [Resource objects](responses/resource-objects.md)
     * [Provide resource (UU)IDs](responses/provide-resource-uuids.md)
     * [Type field](responses/type-field.md)
-    * [Enveloping](responses/enveloping.md)
-    * Link objects
     * [Provide full resources where available](responses/provide-full-resources-where-available.md)
-  * [Relationships](responses/relationships.md)
+  * [Enveloping](responses/enveloping.md)
+  * [Relationship population](responses/relationship-population.md)
+  * Link objects
   * [Return appropriate status codes](responses/return-appropriate-status-codes.md)
   * [Generate structured errors](responses/generate-structured-errors.md)
   * [Keep JSON minified in all responses](responses/keep-json-minified-in-all-responses.md)
