@@ -1,4 +1,4 @@
-# HTTP API Design Guide
+# REST API Recommendations
 
 View on [iMinds-LivingLabs.github.io/rest-api-recommendations](https://iMinds-LivingLabs.github.io/rest-api-recommendations)
 
