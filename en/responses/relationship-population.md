@@ -12,6 +12,7 @@ Never populate relationships inline, but provide them in an `included` array:
   },
   "included": [
     {
+      "id": "e52f94aa-f6b4-41eb-8d95-0192783d778c",
       "name": "John Doe",
       "email": "john.doe@example.com",
       "type": "users"
@@ -63,6 +64,7 @@ When included resource objects have populated relationships of themselves,
   },
   "included": [
     {
+      "id": "e52f94aa-f6b4-41eb-8d95-0192783d778c",
       "name": "John Doe",
       "email": "john.doe@example.com",
       "group": "94566039-106e-49b0-89f1-3eced15b4c16",
