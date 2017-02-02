@@ -1,6 +1,6 @@
 # REST API Recommendations
 
-View on [iMinds-LivingLabs.github.io/rest-api-recommendations](https://iMinds-LivingLabs.github.io/rest-api-recommendations)
+View on [imec-saisf.github.io/rest-api-recommendations](https://imec-saisf.github.io/rest-api-recommendations)
 
 This guide describes a set of HTTP+JSON API design practices, and is a derivative of [http-api-design](https://github.com/interagent/http-api-design)
 
